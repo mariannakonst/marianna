@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #000000; /* Χρώμα για πιο φωτεινό και μοντέρνο αποτέλεσμα */
+    font-family: 'Poppins', sans-serif; /* Χρησιμοποιούμε τη νέα γραμματοσειρά */
+    font-size: 40px; /* Αυξάνουμε το μέγεθος για να είναι πιο εντυπωσιακό */
+    font-weight: 600; /* Έντονα γράμματα */
+    letter-spacing: 1.5px; /* Αύξηση της απόστασης ανάμεσα στα γράμματα */
+    text-transform: uppercase; /* Κάνει το κείμενο κεφαλαία */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Προσθήκη εφέ σκιάς */
+    animation: fadeIn 1s ease-out; /* Εφέ κίνησης κατά την φόρτωση */
+}
+
+/* Δημιουργία εφέ κίνησης */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+form {
+    width: 300px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #396fd3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #315ca6;
+}
+
+
+
+.error {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.flatpickr-calendar {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.flatpickr-day.today {
+    background-color: #396fd3;
+    color: #fff;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #396fd3;
+    outline: none;
+}
+
